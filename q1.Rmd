@@ -1,0 +1,62 @@
+# Quiz 1 Statiscal Inference
+### Ismael Gonzalez Flores
+==========================================================================================
+
+## Question 1
+
+Consider influenza epidemics for two parent heterosexual families. Suppose that the probability is 17% that at least one of the parents has contracted the disease. The probability that the father has contracted influenza is 12% while the probability that both the mother and father have contracted the disease is 6%. What is the probability that the mother has contracted influenza?
+
+**See PDF Attached**
+
+===========================================
+
+## Question 2 
+
+A random variable, X is uniform, a box from 0 to 1 of height 1. (So that it's density is f(x)=1 for 0≤x≤1.) What is it's 75th percentile?
+
+**See PDF Attached**
+
+=============================================
+
+## Question 3 
+
+You are playing a game with a friend where you flip a coin and if it comes up heads you give her X dollars and if it comes up tails she gives you Y dollars. The probability that the coin is heads is p (some number between 0 and 1.) What has to be true about X and Y to make so that both of your expected total earnings is 0. (The game would then be called “fair”.)
+
+**See PDF attached**
+
+================================================
+
+## Question 4
+
+A density that looks like a normal density (but may or may not be exactly normal) is exactly symmetric about zero. (Symmetric means if you flip it around zero it looks the same.) What is its median?
+
+**See PDF attached**
+
+=================================================
+
+## Question 5
+
+Consider the following PMF generated in R
+
+```{r}
+x <- 1:4
+p <- x/sum(x)
+temp <- rbind(x, p)
+rownames(temp) <- c("X", "Prob")
+```
+
+To calculate the mean of a PMF distribution we have to multiplie each value fo the distibution by its probability:
+
+```{r}
+meanx<- x*p
+rbind(temp, meanx)
+```
+
+Then we have to sum each value of **meanx** to caluculate the mean of the total distribution:
+
+```{r}
+mean.dis<- sum(meanx)
+mean.dis
+```
+
+
